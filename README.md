@@ -1,6 +1,6 @@
 # Rudranil Dhol — Portfolio
 
-**Live site:** https://rudranil08.github.io
+**Live site:** https://rudranil08githubio.vercel.app
 
 ![Portfolio hero: a planet transiting a star while the light curve draws below](assets/preview.jpg)
 
