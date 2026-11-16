@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Rudranil Dhol</title>
-<meta name="description" content="Rudranil Dhol: first-year B.Tech Computer Science (IT) student at SRM building iOS apps in SwiftUI, web apps in TypeScript and AI features with the Gemini API.">
+<meta name="description" content="Rudranil Dhol: first-year B.Tech Computer Science (IT) student at SRM building iOS apps in SwiftUI, web apps and servers in TypeScript and Node, and AI features with the Gemini API.">
 <meta name="author" content="Rudranil Dhol">
 <meta name="theme-color" content="#101425">
 <meta property="og:title" content="Rudranil Dhol">
-<meta property="og:description" content="Software engineering portfolio: SwiftUI, TypeScript, Gemini API and a planet measured from NASA TESS data.">
+<meta property="og:description" content="Software engineering portfolio: Matchday for iPhone, RExchange, Grimoire, TripWiseAI and a planet measured from NASA TESS data.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://rudranil08.github.io/assets/preview.jpg">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23101425'/%3E%3Ccircle cx='38' cy='28' r='16' fill='%23ffb347'/%3E%3Ccircle cx='28' cy='30' r='5' fill='%23101425'/%3E%3C/svg%3E">
@@ -69,7 +69,7 @@ html.has-cursor .cur{display:block}
 .bar .mark{font:900 22px/1 var(--f-display);letter-spacing:.04em}
 .bar nav{display:flex;gap:clamp(12px,3vw,32px)}
 .bar nav a{font:500 12px/1 var(--f-mono);letter-spacing:.1em;text-transform:uppercase}
-@media (max-width:560px){.bar nav a:nth-child(2){display:none}}
+@media (max-width:560px){.bar nav a:nth-child(3),.bar nav a:nth-child(4){display:none}}
 
 /* ---------- hero: scroll to transit ---------- */
 .hero{height:240vh;position:relative}
@@ -287,6 +287,84 @@ a.mini:hover{border-color:var(--star);background:var(--night-2)}
 .edu{grid-template-columns:minmax(0,1fr);margin-top:0;gap:12px}
 @media (max-width:860px){.kit-grid{grid-template-columns:minmax(0,1fr)}}
 
+
+/* Matchday card */
+.phone.md{gap:6px}
+.trow{display:grid;grid-template-columns:4px 14px minmax(0,1fr) auto;gap:7px;align-items:center;background:#161b31;border-radius:9px;padding:7px 8px;font:600 10px var(--f-mono);color:var(--dust)}
+.trow i{width:4px;height:16px;border-radius:2px;background:var(--c)}
+.trow span{color:var(--paper);font-family:var(--f-body);font-size:11px}
+.trow.me{outline:1px solid var(--star)}
+.trow em{font-style:normal;color:var(--paper)}
+.fs{margin-top:4px;border-radius:12px;padding:10px;background:linear-gradient(135deg,rgba(255,179,71,.22),rgba(255,107,74,.12));display:grid;grid-template-columns:auto 1fr;align-items:center;gap:2px 10px}
+.fs span{font:600 9px var(--f-mono);color:var(--star);letter-spacing:.1em}
+.fs b{grid-row:span 2;order:-1;font:900 38px/1 var(--f-display);color:var(--paper)}
+.fs small{font:500 10px var(--f-body);color:var(--dust)}
+/* Grimoire card */
+.grim{background:radial-gradient(circle at 50% 0%,rgba(255,107,74,.25),transparent 60%)}
+.poster{position:absolute;inset:44px 28px 18px;border:2px solid var(--flare);border-radius:6px;padding:14px 16px;display:grid;gap:8px;align-content:start;background:#1a1220}
+.pt{font:900 clamp(34px,4vw,46px)/.9 var(--f-display);color:var(--flare);letter-spacing:.06em;text-align:center}
+.ps{font:500 10px var(--f-mono);color:var(--dust);text-align:center;letter-spacing:.14em;text-transform:uppercase;margin-bottom:4px}
+.pr{display:grid;grid-template-columns:14px minmax(0,1fr) auto;gap:10px;align-items:center;font-size:13px;color:var(--paper);border-bottom:1px dashed rgba(255,107,74,.3);padding-bottom:6px}
+.pr i{width:14px;height:14px;border:1.5px solid var(--paper);border-radius:3px}
+.pr em{font:600 10px var(--f-mono);font-style:normal;color:var(--star)}
+.pr.done span{text-decoration:line-through;color:var(--dust)}
+.pr.done i{background:var(--flare);border-color:var(--flare)}
+.pq{margin-top:4px;font:500 11px var(--f-mono);color:var(--star);background:rgba(255,179,71,.08);border:1px solid rgba(255,179,71,.25);border-radius:6px;padding:7px 9px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+
+/* Matchday case study */
+.md-case{padding-block:clamp(90px,14vh,160px);display:grid;gap:18px}
+.md-head{display:grid;gap:18px;margin-bottom:clamp(20px,4vh,40px)}
+.md-head .k{color:var(--star)}
+.md-head h2{font-size:clamp(80px,15vw,220px);line-height:.8}
+.md-head p{max-width:60ch;color:var(--dust);margin:0;font-size:clamp(17px,1.5vw,20px)}
+.md-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:18px}
+.md-block{border:1px solid var(--line);border-radius:22px;background:var(--night-2);padding:clamp(20px,2.4vw,32px);display:grid;gap:18px;align-content:start;min-width:0}
+.md-block .lbl{color:var(--star)}
+.feat{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.feat li{color:var(--dust);font-size:15px;line-height:1.5;padding-left:18px;position:relative}
+.feat li::before{content:"";position:absolute;left:0;top:.55em;width:7px;height:7px;border-radius:50%;background:var(--star)}
+.feat b{color:var(--paper);font-weight:600}
+.fcard{background:var(--night);border:1px solid var(--line);border-radius:16px;padding:18px;display:grid;gap:10px}
+.fc-top{display:flex;justify-content:space-between;align-items:center}
+.fc-top .mono{color:var(--dust)}
+.fc-top b{font:900 64px/.8 var(--f-display);color:var(--star)}
+.fbar{display:grid;grid-template-columns:70px minmax(0,1fr);gap:10px;align-items:center;font-size:13px;color:var(--dust)}
+.fbar i{height:8px;border-radius:4px;width:var(--w);background:linear-gradient(90deg,var(--star),var(--flare))}
+.fcard .why{color:var(--dust);font-size:10px;opacity:.75}
+.howlist{margin:0;padding-left:20px;display:grid;gap:10px;color:var(--dust);font-size:15px}
+.howlist strong{color:var(--paper)}
+.flow{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr) auto minmax(0,1fr);gap:12px;align-items:stretch}
+.flow.two{grid-template-columns:repeat(3,minmax(0,1fr))}
+.flow .node{border:1px solid var(--line);border-radius:16px;padding:16px;background:var(--night);display:grid;gap:6px;align-content:start}
+.flow .node.hot{border-color:rgba(255,179,71,.5)}
+.flow .node .mono{color:var(--dust);font-size:11px}
+.flow .node b{font:700 24px/1 var(--f-display);text-transform:uppercase}
+.flow .node p{margin:0;color:var(--dust);font-size:14px;line-height:1.5}
+.flow .arrow{align-self:center;color:var(--star);font-size:22px}
+.lt{display:grid;gap:12px}
+.lt-head{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:baseline}
+.lt-head b{font:700 28px/1 var(--f-display);text-transform:uppercase}
+.lt-head span{color:var(--dust);font-size:14px}
+.lt-row{display:grid;grid-template-columns:120px minmax(0,1fr) 110px;gap:14px;align-items:center}
+.lt-row .mono{color:var(--dust);font-size:11px}
+.lt-row b{font:600 14px var(--f-mono);text-align:right;font-variant-numeric:tabular-nums}
+.lt-bar{display:flex;height:14px;border-radius:7px;overflow:hidden;background:var(--night)}
+.lt-bar i{width:var(--w);height:100%}
+.lt-bar i.ok{background:var(--star)}
+.lt-bar i.bad{background:repeating-linear-gradient(45deg,var(--flare) 0 6px,rgba(255,107,74,.45) 6px 12px)}
+.lt-bar i.was{background:var(--dust);opacity:.55}
+.lt-note{margin:4px 0 8px;color:var(--dust);font-size:15px;max-width:70ch}
+.lt-note strong{color:var(--paper)}
+.nums{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.nums div{background:var(--night);padding:16px;display:grid;gap:6px;align-content:start}
+.nums b{font:900 clamp(28px,2.8vw,42px)/.9 var(--f-display);font-variant-numeric:tabular-nums}
+.nums span{color:var(--dust);font-size:13px;line-height:1.35}
+.md-foot{margin:0;color:var(--dust);font-size:15px;display:grid;gap:12px}
+.md-foot .mono{color:var(--star);font-size:11px;line-height:1.7}
+@media (max-width:1000px){.nums{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:860px){.md-grid,.flow,.flow.two{grid-template-columns:minmax(0,1fr)}.flow .arrow{justify-self:center;transform:rotate(90deg)}}
+@media (max-width:560px){.nums{grid-template-columns:repeat(2,minmax(0,1fr))}.lt-row{grid-template-columns:72px minmax(0,1fr) auto;gap:8px}.lt-row b{font-size:12px;white-space:nowrap}.lt-row .mono{font-size:10px}}
+
 @media (prefers-reduced-motion:reduce){
   .chain .edge{animation:none}
   .marq{animation:none}
@@ -305,6 +383,7 @@ a.mini:hover{border-color:var(--star);background:var(--night-2)}
   <a class="mark" href="#top" data-cursor="TOP">RD</a>
   <nav>
     <a href="#work">Work</a>
+    <a href="#matchday">Matchday</a>
     <a href="#ai">AI</a>
     <a href="#code">Code</a>
     <a href="#contact">Contact</a>
@@ -319,7 +398,7 @@ a.mini:hover{border-color:var(--star);background:var(--night-2)}
       <div class="hero-copy">
         <div class="eyebrow mono"><span>B.Tech Computer Science · IT specialisation · SRM</span><span>· First year</span></div>
         <h1 id="name"><span>Rudranil</span><span class="out">Dhol</span></h1>
-        <p>I turn ideas into software people can use: native iOS apps in SwiftUI, web apps in TypeScript, and AI features on the Gemini API.</p>
+        <p>I turn ideas into software people can use: native iOS apps in SwiftUI, web apps and servers in TypeScript and Node, and AI features on the Gemini API.</p>
       </div>
       <div class="readout mono">
         <span class="hint">Scroll to run the transit</span>
@@ -335,9 +414,9 @@ a.mini:hover{border-color:var(--star);background:var(--night-2)}
     <div class="mono">How I work</div>
     <p id="say">I use AI to get from an idea to a working prototype fast. Then I read the code, test it and break it until I understand what I'm shipping.</p>
     <div class="facts">
+      <div><b>1,000</b><span>players in my Matchday load test. After my fixes, every one finished and 50 of 50 cheats were refused</span></div>
       <div><b>Finalist</b><span>RExchange, selected from 130+ participants in a 5-hour AI hackathon</span></div>
-      <div><b>18K+</b><span>non-blank lines of Swift, TypeScript and Python across six public repos</span></div>
-      <div><b>3</b><span>iOS apps built in SwiftUI and Xcode: TripWiseAI, Roamly and Heads &amp; Tails</span></div>
+      <div><b>34K+</b><span>non-blank lines of Swift, TypeScript, JavaScript and Python across my projects</span></div>
       <div><b>2.24%</b><span>transit depth I measured for Qatar-1b from NASA TESS data</span></div>
     </div>
   </section>
@@ -350,6 +429,27 @@ a.mini:hover{border-color:var(--star);background:var(--night-2)}
         <span class="mono">Scroll or drag the reel</span>
       </div>
       <div class="track" id="track">
+        <!-- Matchday -->
+        <article class="card" data-cursor="DRAG">
+          <span class="badge">Biggest build</span>
+          <div class="vis">
+            <div class="phone md" aria-hidden="true">
+              <span class="chip">TABLE · MATCHWEEK</span>
+              <div class="ttl">League</div>
+              <div class="trow me"><i style="--c:#ffb347"></i><b>1</b><span>Your club</span><em>61</em></div>
+              <div class="trow"><i style="--c:#7fb7ff"></i><b>2</b><span>Rival</span><em>58</em></div>
+              <div class="trow"><i style="--c:#ff6b4a"></i><b>3</b><span>Club</span><em>55</em></div>
+              <div class="trow"><i style="--c:#b8e0c8"></i><b>4</b><span>Club</span><em>52</em></div>
+              <div class="fs"><span>FORM</span><b>96</b><small>Why 96?</small></div>
+            </div>
+            <div class="arch" aria-hidden="true"><span>SwiftUI app</span><span class="g">Cloudflare Worker</span><span>Firestore</span></div>
+          </div>
+          <div class="body">
+            <div class="top"><h3>Matchday</h3><span class="mono tags">SwiftUI · WidgetKit · Workers · Firebase</span></div>
+            <p>A football app for iPhone covering <strong>four leagues and 76 clubs</strong>: live tables, a news feed written from match data, a 0–100 player Form score, injuries and a daily quiz with a global leaderboard. It has its own data server, widgets, Siri and offline mode.</p>
+            <div class="clinks"><a href="#matchday">Case study ↓</a><a href="https://github.com/rudranil08/Matchday" target="_blank" rel="noopener" data-cursor="REPO">Repo ↗</a></div>
+          </div>
+        </article>
         <!-- RExchange -->
         <article class="card" data-cursor="DRAG">
           <span class="badge">Finalist · 130+</span>
@@ -374,16 +474,23 @@ a.mini:hover{border-color:var(--star);background:var(--night-2)}
             <div class="clinks"><a href="https://github.com/rudranil08/RExchange" target="_blank" rel="noopener" data-cursor="REPO">Code ↗</a></div>
           </div>
         </article>
-        <!-- Roamly -->
+        <!-- Grimoire -->
         <article class="card" data-cursor="DRAG">
-          <span class="badge">In progress</span>
-          <div class="vis">
-            <canvas class="map" id="roamly" aria-hidden="true"></canvas>
+          <span class="badge">42 tests · CI</span>
+          <div class="vis grim" aria-hidden="true">
+            <div class="poster">
+              <div class="pt">GRIMOIRE</div>
+              <div class="ps">The tasks that wouldn't die</div>
+              <div class="pr"><i></i><span>Buy candy</span><em>!SCREAM</em></div>
+              <div class="pr done"><i></i><span>Carve pumpkin</span><em>SLAIN</em></div>
+              <div class="pr"><i></i><span>Party playlist</span><em>#PARTY</em></div>
+              <div class="pq">buy candy tomorrow !scream #errand</div>
+            </div>
           </div>
           <div class="body">
-            <div class="top"><h3>Roamly</h3><span class="mono tags">iOS · SwiftUI · UI/UX</span></div>
-            <p>An iOS travel-planning app I'm building now. Instead of juggling scattered travel information, you <strong>organise the whole trip in one clean, visual interface</strong>. My focus is navigation, visual hierarchy and making choices easy to understand.</p>
-            <div class="clinks"><a href="https://github.com/rudranil08/Roamly" target="_blank" rel="noopener" data-cursor="REPO">Code ↗</a></div>
+            <div class="top"><h3>Grimoire</h3><span class="mono tags">Node · SQLite · Vanilla JS</span></div>
+            <p>A Halloween-themed task manager with <strong>zero dependencies</strong>: a REST API on Node's built-in SQLite, accounts, an offline change queue, a calendar feed and a natural-language quick-add. Tested in CI on Node 22 and 24.</p>
+            <div class="clinks"><a href="https://github.com/rudranil08/Grimoire" target="_blank" rel="noopener" data-cursor="REPO">Code ↗</a></div>
           </div>
         </article>
         <!-- TripWiseAI -->
@@ -403,6 +510,18 @@ a.mini:hover{border-color:var(--star);background:var(--night-2)}
             <div class="top"><h3>TripWiseAI</h3><span class="mono tags">Swift · SwiftUI · Gemini API</span></div>
             <p>A native travel planner. It turns your destination and preferences into a structured request, asks Gemini for <strong>strict JSON</strong>, and decodes it into Swift types for a day-by-day itinerary. MVVM with a service layer.</p>
             <div class="clinks"><a href="https://github.com/rudranil08/TripwiseAi" target="_blank" rel="noopener" data-cursor="REPO">Code ↗</a></div>
+          </div>
+        </article>
+        <!-- Roamly -->
+        <article class="card" data-cursor="DRAG">
+          <span class="badge">In progress</span>
+          <div class="vis">
+            <canvas class="map" id="roamly" aria-hidden="true"></canvas>
+          </div>
+          <div class="body">
+            <div class="top"><h3>Roamly</h3><span class="mono tags">iOS · SwiftUI · SwiftData · MapKit</span></div>
+            <p>An iOS travel logbook I'm building now. It notices when you leave home, <strong>detects the places you visit and confirms them with a photo</strong>, then scores each trip for novelty and how sustainably you travelled. Anti-cheat catches reused photos.</p>
+            <div class="clinks"><a href="https://github.com/rudranil08/Roamly" target="_blank" rel="noopener" data-cursor="REPO">Code ↗</a></div>
           </div>
         </article>
         <!-- Qatar-1b -->
@@ -427,10 +546,87 @@ a.mini:hover{border-color:var(--star);background:var(--night-2)}
         </article>
       </div>
       <div class="reel-foot wrap mono">
-        <span id="count">01 / 05</span>
+        <span id="count">01 / 07</span>
         <div class="prog"><i id="progbar"></i></div>
         <a href="https://github.com/rudranil08" target="_blank" rel="noopener">github.com/rudranil08</a>
       </div>
+    </div>
+  </section>
+
+  <!-- MATCHDAY CASE STUDY -->
+  <section class="md-case wrap" id="matchday" aria-label="Matchday case study">
+    <div class="md-head">
+      <div class="mono k">Case study · My biggest build</div>
+      <h2>Matchday</h2>
+      <p>A native iPhone app for the Premier League, LaLiga, Bundesliga and Ligue 1. I designed it, built the app and its data server, stress-tested it, and cut its launch video to the beat of the music.</p>
+    </div>
+
+    <div class="md-grid">
+      <div class="md-block">
+        <div class="mono lbl">What it does</div>
+        <ul class="feat">
+          <li><b>News from match data.</b> Results with scorers, fixtures and new injuries, written by the app. No articles copied from other sites.</li>
+          <li><b>Tables in club colours.</b> All four leagues. Follow a club and it's highlighted everywhere.</li>
+          <li><b>Form score.</b> Every player rated 0–100 against players in the same position, with a plain-language "Why 96" and a shareable card.</li>
+          <li><b>Injuries.</b> Who's out, who's doubtful, and when they're expected back.</li>
+          <li><b>Daily quiz.</b> Five personal questions built from live stats, a speed bonus, a form-duel mini-game and a Today / All-time leaderboard.</li>
+          <li><b>iPhone features.</b> Home and Lock Screen widgets, Siri and Shortcuts, offline mode, and an on-device Apple Intelligence "Catch me up" on iOS 26+.</li>
+          <li><b>Onboarding.</b> A floodlit pitch where you flick the ball to score. Picking your club sweeps its colour across the screen.</li>
+        </ul>
+      </div>
+      <div class="md-block form">
+        <div class="mono lbl">How the Form score works</div>
+        <div class="fcard">
+          <div class="fc-top"><span class="mono">Forward · per 90</span><b>96</b></div>
+          <div class="fbar"><span>Goals</span><i style="--w:97%"></i></div>
+          <div class="fbar"><span>Assists</span><i style="--w:88%"></i></div>
+          <div class="fbar"><span>Shots</span><i style="--w:91%"></i></div>
+          <div class="fbar"><span>Minutes</span><i style="--w:79%"></i></div>
+          <div class="mono why">Example card. Illustrative values</div>
+        </div>
+        <ol class="howlist">
+          <li>Each stat is <strong>ranked against the league's players in the same position</strong>, per 90 minutes.</li>
+          <li>Recent games count for more.</li>
+          <li>Playing time sets <strong>how confident</strong> the score is, not how high it goes. A player with few minutes stays near 50.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="md-block arch-block">
+      <div class="mono lbl">How it's built</div>
+      <div class="flow">
+        <div class="node"><span class="mono">iPhone app</span><b>Swift · SwiftUI</b><p>~8,200 lines. WidgetKit, App Intents, FoundationModels. Supports iOS 17 to 27; newer features fall back cleanly.</p></div>
+        <div class="arrow" aria-hidden="true">⟷</div>
+        <div class="node hot"><span class="mono">Data server</span><b>Cloudflare Workers</b><p>~1,900 lines of JavaScript. Keeps the provider's key off the phone, caches so costs stay flat at any scale, and serves the last good data if the provider fails.</p></div>
+        <div class="arrow" aria-hidden="true">⟷</div>
+        <div class="node"><span class="mono">Football data</span><b>Provider API</b><p>Fixtures, results, stats and injuries for four leagues and 76 clubs.</p></div>
+      </div>
+      <div class="flow two">
+        <div class="node"><span class="mono">Accounts</span><b>Firebase Auth</b><p>Email, Google and Sign in with Apple. Local passwords are salted PBKDF2 hashes (310,000 rounds) in the Keychain, never plain text.</p></div>
+        <div class="node"><span class="mono">Leaderboard</span><b>Cloud Firestore</b><p>Security rules reject fake scores, scores posted for someone else and scores for past days.</p></div>
+        <div class="node"><span class="mono">Safety</span><b>Privacy built in</b><p>Age gate with guest mode for under-13s, username filter, report or hide a name, full account deletion and a privacy manifest.</p></div>
+      </div>
+    </div>
+
+    <div class="md-block test">
+      <div class="mono lbl">How I tested it</div>
+      <div class="lt">
+        <div class="lt-head"><b>1,000-player load test</b><span>Run against Firebase emulators with the real security rules</span></div>
+        <div class="lt-row"><span class="mono">First run</span><div class="lt-bar"><i class="ok" style="--w:79.1%"></i><i class="bad" style="--w:20.9%"></i></div><b>791 / 1,000</b></div>
+        <div class="lt-row"><span class="mono">After fixes</span><div class="lt-bar"><i class="ok" style="--w:100%"></i></div><b>1,000 / 1,000</b></div>
+        <p class="lt-note">The first run found <strong>209 players never got a score posted</strong>. I added retries, reused sign-in tokens and cut database reads. Then every player finished.</p>
+        <div class="lt-row"><span class="mono">Reads / player</span><div class="lt-bar"><i class="was" style="--w:100%"></i></div><b>~80</b></div>
+        <div class="lt-row"><span class="mono">After fixes</span><div class="lt-bar"><i class="ok" style="--w:22.5%"></i></div><b>~18</b></div>
+      </div>
+      <div class="nums">
+        <div><b>50/50</b><span>cheat attempts refused</span></div>
+        <div><b>0</b><span>crashes in chaos tests: 20% timeouts, dropped connections, server errors, garbage replies</span></div>
+        <div><b>2.3s</b><span>cold launch</span></div>
+        <div><b>~85MB</b><span>memory, levelling off</span></div>
+        <div><b>18/18</b><span>database rule checks pass</span></div>
+        <div><b>11</b><span>server tests</span></div>
+      </div>
+      <p class="md-foot">UI tests also caught a real freeze on iOS 26, which I fixed. <span class="mono">Swift · SwiftUI · WidgetKit · App Intents · FoundationModels · Firebase Auth · Cloud Firestore · Cloudflare Workers · Node · XCTest · HyperFrames</span></p>
     </div>
   </section>
 
@@ -459,8 +655,8 @@ a.mini:hover{border-color:var(--star);background:var(--night-2)}
       </li>
       <li class="step">
         <div class="sh"><span class="mono">Step 4</span><h3>Verify</h3></div>
-        <p>I test for the failure cases. RExchange has a 3.5-second timeout and a <strong>deterministic fallback</strong>, so the demo keeps working with no API key. In my research, I didn't accept the BLS output; I traced the 2.84-day result to a harmonic of the real 1.42-day period.</p>
-        <code>AbortController → deterministicFallbackEvaluateMatch()</code>
+        <p>I test for the failure cases. In Matchday, a <strong>1,000-player load test</strong> found 209 scores that never posted, so I fixed it and re-ran it until every player finished. RExchange has a 3.5-second timeout and a <strong>deterministic fallback</strong>. In my research, I traced a wrong BLS result to a harmonic of the real 1.42-day period.</p>
+        <code>load test: 791 → 1,000 of 1,000 players · chaos tests: 0 crashes</code>
       </li>
     </ol>
   </section>
@@ -523,6 +719,33 @@ generationConfig: {
   responseMimeType: <span class="s">"application/json"</span>,
 }</code></pre>
         <p>If the model is slow, missing or returns bad JSON, the app falls back to rule-based matching instead of breaking.</p>
+      </figure>
+      <figure class="snip" data-cursor="READ">
+        <figcaption><span class="mono">Grimoire · server/auth.js</span><b>Passwords done properly</b></figcaption>
+        <pre><code><span class="c">// Stored as "scrypt$&lt;salt&gt;$&lt;hash&gt;"</span>
+<span class="k">export async function</span> verifyPassword(password, stored) {
+  <span class="k">const</span> [scheme, saltHex, hashHex] = String(stored).split(<span class="s">"$"</span>);
+  <span class="k">if</span> (scheme !== <span class="s">"scrypt"</span> || !saltHex || !hashHex) <span class="k">return false</span>;
+  <span class="k">const</span> expected = Buffer.from(hashHex, <span class="s">"hex"</span>);
+  <span class="k">const</span> actual = <span class="k">await</span> scryptAsync(password,
+    Buffer.from(saltHex, <span class="s">"hex"</span>), expected.length);
+  <span class="k">return</span> timingSafeEqual(actual, expected);
+}</code></pre>
+        <p>Salted scrypt hashes and a constant-time comparison, so response timing can't leak how close a guess was.</p>
+      </figure>
+      <figure class="snip" data-cursor="READ">
+        <figcaption><span class="mono">Grimoire · server/server.js</span><b>Blocking cross-site requests</b></figcaption>
+        <pre><code><span class="c">// CSRF: writes must come from our own origin and carry JSON</span>
+<span class="k">if</span> (![<span class="s">"GET"</span>, <span class="s">"HEAD"</span>, <span class="s">"OPTIONS"</span>].includes(method)) {
+  <span class="k">const</span> origin = req.headers.origin;
+  <span class="k">if</span> (origin &amp;&amp; <span class="k">new</span> URL(origin).host !== req.headers.host)
+    <span class="k">throw new</span> HttpError(<span class="n">403</span>, <span class="s">"Cross-origin request blocked"</span>);
+  <span class="k">const</span> len = Number(req.headers[<span class="s">"content-length"</span>] || <span class="n">0</span>);
+  <span class="k">if</span> (len > <span class="n">0</span> &amp;&amp; !String(req.headers[<span class="s">"content-type"</span>] || <span class="s">""</span>)
+      .startsWith(<span class="s">"application/json"</span>))
+    <span class="k">throw new</span> HttpError(<span class="n">415</span>, <span class="s">"Send JSON"</span>);
+}</code></pre>
+        <p>Cross-site forms can only send form or text bodies, so requiring same-origin JSON shuts them out. The cookie is also SameSite=Lax.</p>
       </figure>
     </div>
   </section>
@@ -593,22 +816,22 @@ generationConfig: {
   <!-- TOOLKIT -->
   <section class="kit" aria-label="Toolkit">
     <div class="mono wrap">Toolkit, all used in the projects above</div>
-    <div class="marq" aria-label="Swift, SwiftUI, Xcode, MVVM, TypeScript, React, Next.js, Zod, Gemini API, NumPy, Python, NumPy, Lightkurve, Matplotlib, JavaScript, Vite, Vercel, Git">
-      <span class="a">Swift</span><span>SwiftUI</span><span>Xcode</span><span>MVVM</span><span class="a">TypeScript</span><span>React</span><span>Next.js</span><span>Zod</span><span class="a">Gemini API</span><span>NumPy</span><span>Python</span><span>Lightkurve</span><span>Vite</span><span>Vercel</span><span>Git</span>
-      <span class="a">Swift</span><span>SwiftUI</span><span>Xcode</span><span>MVVM</span><span class="a">TypeScript</span><span>React</span><span>Next.js</span><span>Zod</span><span class="a">Gemini API</span><span>NumPy</span><span>Python</span><span>Lightkurve</span><span>Vite</span><span>Vercel</span><span>Git</span>
+    <div class="marq" aria-label="Swift, SwiftUI, WidgetKit, App Intents, TypeScript, Node, Cloudflare Workers, Firebase, Gemini API, SQLite, Next.js, React, Python, XCTest, Git">
+      <span class="a">Swift</span><span>SwiftUI</span><span>WidgetKit</span><span>App Intents</span><span class="a">TypeScript</span><span>Node</span><span class="a">Cloudflare Workers</span><span>Firebase</span><span class="a">Gemini API</span><span>SQLite</span><span>Next.js</span><span>React</span><span>Python</span><span>XCTest</span><span>Git</span>
+      <span class="a">Swift</span><span>SwiftUI</span><span>WidgetKit</span><span>App Intents</span><span class="a">TypeScript</span><span>Node</span><span class="a">Cloudflare Workers</span><span>Firebase</span><span class="a">Gemini API</span><span>SQLite</span><span>Next.js</span><span>React</span><span>Python</span><span>XCTest</span><span>Git</span>
     </div>
     <div class="kit-grid wrap">
       <div class="langs">
-        <div class="mono lh">Lines of code on my GitHub, by language</div>
-        <div class="lang"><span>Swift</span><i style="--w:100%"></i><b>9.4K</b></div>
-        <div class="lang"><span>TypeScript</span><i style="--w:82%"></i><b>7.7K</b></div>
-        <div class="lang"><span>HTML / CSS</span><i style="--w:12%"></i><b>1.1K</b></div>
-        <div class="lang"><span>Python</span><i style="--w:2.6%"></i><b>240</b></div>
-        <div class="lang"><span>JavaScript</span><i style="--w:2.3%"></i><b>220</b></div>
-        <p class="note">Non-blank lines, excluding config, lockfiles and seed data.</p>
+        <div class="mono lh">Lines of code across my projects, by language</div>
+        <div class="lang"><span>Swift</span><i style="--w:100%"></i><b>17.6K</b></div>
+        <div class="lang"><span>TypeScript</span><i style="--w:44%"></i><b>7.7K</b></div>
+        <div class="lang"><span>JavaScript</span><i style="--w:35%"></i><b>6.1K</b></div>
+        <div class="lang"><span>HTML / CSS</span><i style="--w:17%"></i><b>3.0K</b></div>
+        <div class="lang"><span>Python</span><i style="--w:1.4%"></i><b>240</b></div>
+        <p class="note">Non-blank lines, excluding config, lockfiles and seed data. Matchday's counts come from the project itself; its source isn't on GitHub yet.</p>
       </div>
       <div class="edu">
-        <div><b>SRM Institute of Science and Technology</b><p>B.Tech in Computer Science, specialisation in Information Technology. First year. Languages: C, Python, Swift, JavaScript, HTML/CSS.</p></div>
+        <div><b>SRM Institute of Science and Technology</b><p>B.Tech in Computer Science, specialisation in Information Technology. First year. Languages: C, Python, Swift, JavaScript, TypeScript, HTML/CSS.</p></div>
         <div><b>Getting better at</b><p>Data structures and algorithms, backend and system design, and CS fundamentals, so AI stays a multiplier and never a crutch.</p></div>
         <div><b>Looking for</b><p>Software engineering, iOS, product engineering and AI application internships. Give me a small, real problem and I'll ship something.</p></div>
       </div>
@@ -758,7 +981,8 @@ generationConfig: {
   const cards = [...track.children];
   let travel = 0;
   function sizeReel() {
-    travel = Math.max(0, track.scrollWidth - innerWidth);
+    const padR = parseFloat(getComputedStyle(track).paddingLeft) || 0;
+    travel = Math.max(0, track.scrollWidth - innerWidth + padR);
     reel.style.height = (window.innerHeight + travel) + 'px';
   }
   // drag to scroll the reel (maps horizontal drag to page scroll, with inertia)
@@ -906,6 +1130,5 @@ generationConfig: {
   requestAnimationFrame(frame);
 })();
 </script>
-
 </body>
 </html>

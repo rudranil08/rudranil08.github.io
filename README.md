@@ -4,7 +4,7 @@
 
 ![Portfolio hero: a planet transiting a star while the light curve draws below](assets/preview.jpg)
 
-I'm a first-year B.Tech Computer Science (Information Technology specialisation) student at SRM Institute of Science and Technology. I build iOS apps in SwiftUI, web apps in TypeScript, and AI features on the Gemini API. This repo is my portfolio site.
+I'm a first-year B.Tech Computer Science (Information Technology specialisation) student at SRM Institute of Science and Technology. I build iOS apps in SwiftUI, web apps and servers in TypeScript and Node, and AI features on the Gemini API. This repo is my portfolio site.
 
 I'm looking for **software engineering, iOS, product engineering and AI application internships**.
 
@@ -14,15 +14,23 @@ I'm looking for **software engineering, iOS, product engineering and AI applicat
 
 | Project | What it is | Stack | Code |
 |---|---|---|---|
+| **Matchday** | My biggest build. A football app for iPhone covering four leagues and 76 clubs: live tables, a news feed written from match data, a 0–100 player Form score, injuries and a daily quiz with a global leaderboard. Has its own data server, widgets, Siri and offline mode. Load-tested with 1,000 simulated players. | Swift, SwiftUI, WidgetKit, App Intents, Cloudflare Workers, Firebase | [repo](https://github.com/rudranil08/Matchday) |
 | **RExchange** | Campus barter app. Gemini turns plain-language posts into validated listings; a matcher finds direct swaps and 3-person exchange loops. Finalist, selected from 130+ participants. | Next.js, TypeScript, Gemini API, Zod | [repo](https://github.com/rudranil08/RExchange) |
-| **Roamly** *(in progress)* | iOS travel-planning app that organises a whole trip in one clean, visual interface. | Swift, SwiftUI, Xcode | [repo](https://github.com/rudranil08/Roamly) |
+| **Grimoire** | A Halloween-themed task manager with zero dependencies: REST API on Node's built-in SQLite, accounts, offline change queue, calendar feed and natural-language quick-add. 42 tests in CI on Node 22 and 24. | Node, SQLite, vanilla JS | [repo](https://github.com/rudranil08/Grimoire) |
 | **TripWiseAI** | Native travel planner. Sends a structured trip request to Gemini and decodes the JSON reply into Swift types for a day-by-day itinerary. MVVM with a service layer. | Swift, SwiftUI, Gemini API | [repo](https://github.com/rudranil08/TripwiseAi) |
+| **Roamly** *(in progress)* | iOS travel logbook. Detects the places you visit, verifies them with photo and GPS anti-cheat, and scores trips for novelty and sustainability. | Swift, SwiftUI, SwiftData, MapKit | [repo](https://github.com/rudranil08/Roamly) |
 | **Qatar-1b transit analysis** | Independent research on NASA TESS data. Caught a BLS harmonic (2.84 d vs the true ~1.42 d), measured a 2.24% depth and ~1.17 Jupiter radii. | Python, Lightkurve, NumPy, Matplotlib | [repo](https://github.com/rudranil08/qatar1b_transit_analysis) |
 | **QR Designer** | Client-side QR generator with live preview, logo overlay, PNG/SVG export and WCAG contrast warnings. | React, TypeScript, Vite | [live](https://qr-design-gdc.vercel.app/) · [repo](https://github.com/rudranil08/qr-design-gdc) |
 
-The site also covers how I build with AI (frame → generate → inspect → verify), short code excerpts from these repos, my earlier web projects from 2023, and my film and photography work.
+The site also has a Matchday case study, a section on how I build with AI (frame → generate → inspect → verify), short code excerpts from these repos, my earlier web projects from 2023, and my film and photography work.
 
 ![Selected work reel](assets/work.jpg)
+
+### Matchday case study
+
+How the Form score works, how the app and its data server fit together, and how I tested it. The first 1,000-player load test found 209 players whose scores never posted. After I added retries, reused sign-in tokens and cut database reads (from about 80 to about 18 per player), every player finished and 50 of 50 cheat attempts were refused.
+
+![Matchday testing results](assets/matchday.jpg)
 
 ---
 
